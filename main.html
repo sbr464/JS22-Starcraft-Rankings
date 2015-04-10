@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Starcraft Rankings</title>
+    <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="http://cdn.datatables.net/1.10.4/css/jquery.dataTables.css">
+    <link rel="stylesheet" type="text/css" href="media/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" type="text/css" href="media/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" type="text/css" href="css/foundation.css">
+    <link rel="stylesheet" href="bower_components/chartist/dist/chartist.min.css">
+    <link rel="stylesheet" type="text/css" href="media/css/main.css">
+    
+
+  </head>
+  <body>
+<nav class="top-bar" data-topbar role="navigation">
+  <ul class="title-area">
+    <li class="name">
+      <h1><a href="#"><img class='header_logo' src='media/images/wcs-logo-blue.png'</a></a></h1>
+    </li>
+     <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+  </ul>
+
+  <section class="top-bar-section">
+    <!-- Right Nav Section -->
+    <ul class="right">
+      <li class="has-dropdown">
+        <a href="#">Menu</a>
+        <ul class="dropdown">
+          <li><a href="main.html">Overview</a></li>
+          <li class="main.html#panel2"><a href="#">Statistics</a></li>
+        </ul>
+      </li>
+    </ul>
+
+    <!-- Left Nav Section -->
+  </section>
+</nav>
+
+<ul class="tabs data_table" data-tab>
+  <li class="tab-title active"><a href="#panel1">Overview</a></li>
+  <li class="tab-title"><a href="#panel2">Stats Board</a></li>
+  <li class="tab-title"><a href="#panel3">Information</a></li>
+<!--   <li class="tab-title"><a href="#panel4">Tab 4</a></li> -->
+</ul>
+<div class="tabs-content data_table">
+  <div class="content active" id="panel1">
+    <table id="table_1" class="display" cellspacing="0" width="100%">
+        <thead>
+            <tr>
+                <th>Username</th>
+                <th>Full Name</th>
+                <th>Region</th>
+                <th>Race</th>
+                <th>Wins</th>
+                <th>Losses</th>
+            </tr>
+        </thead>
+ 
+        <tfoot>
+            <tr>
+                <th>Username</th>
+                <th>Full Name</th>
+                <th>Region</th>
+                <th>Race</th>
+                <th>Wins</th>
+                <th>Losses</th>
+            </tr>
+        </tfoot>
+    </table>
+  </div>
+  <div class="content" id="panel2">
+  <div class="chart-container">
+  <h3>Players by Country</h3>
+ <div class="ct-chart ct-perfect-fourth"></div>
+ </div>
+   <div class="chart-container2">
+  <h3>Wins & Losses by Country</h3>
+ <div class="ct-chart2 ct-perfect-fourth"></div>
+ </div>
+  </div>
+  <div class="content" id="panel3">
+    <p>This is the third panel of the basic tab example. This is the third panel of the basic tab example.</p>
+  </div>
+
+
+
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> 
+    <script src="bower_components/chartist/dist/chartist.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.4/js/jquery.dataTables.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script src="media/js/main.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+  </body>
+</html>
